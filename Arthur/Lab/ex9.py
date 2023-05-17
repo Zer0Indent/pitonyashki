@@ -11,7 +11,6 @@ def BIN_to_DEC(binary):
 
     return dec_num
 
-
 def BIN_to_HEX(binary):
 
 	hex_num = []

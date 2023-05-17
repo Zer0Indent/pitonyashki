@@ -1,6 +1,8 @@
 
-#BASE_to_DEC(value, base)
-#DEC_to_BASE(value, base)
+#def BASE_to_DEC(value, base):
+#def DEC_to_BASE(value, base):
+#def conv(from_base, to_base):
+
 
 def BIN_to_DEC(binary):
 	
