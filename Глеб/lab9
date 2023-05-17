@@ -15,8 +15,10 @@ def BIN_to_DEC(binary):
 def from2to16(number):
     number = str(number)
     length = len(number)
-    number = '0' * (length // 4 * 4 + (0 if length % 4 == 0 else 1) * 4 - length) + number
-    
+
+    number = '0' * (length // 4 * 4 + (0 if length % 4 == 0 else 1) * 4 - length)
+    number += number
+
     result = ''
     end = len(number) // 4
     for i in range(end):
