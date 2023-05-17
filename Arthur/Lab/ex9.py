@@ -26,6 +26,8 @@ def BIN_to_HEX(binary):
 		binary //= 10
 
 		if counter == 4:
+			
+			#hex_num.append('ABCDEF'[dec_num - 10] if dec_num>= 10 else str(dec_num))
 
 			if dec_num == 10:
 				hex_num.append('A')
