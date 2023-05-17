@@ -1,4 +1,6 @@
+
 def BIN_to_DEC(binary):
+    binary = int(binary)
     dec_num = 0
     pow_of_num = 0
 
@@ -9,8 +11,15 @@ def BIN_to_DEC(binary):
 
     return dec_num
 
-
-#print(BIN_to_DEC(101001))
+def BIN_to_DEC_2(binary):
+	
+	result = 0
+	length = len(binary)
+	
+	for i in range(length):
+		result += int(binary[length - 1 - i]) * 2 ** i
+	
+	return result
 
 def BIN_to_HEX(binary):
 
@@ -56,9 +65,6 @@ def BIN_to_HEX(binary):
 
 	return my_str
 
-#print(BIN_to_HEX(10011))
-
-
 def BIN_to_OCT(binary):
 	oct_num = []
 	dec_num = 0
@@ -87,9 +93,6 @@ def BIN_to_OCT(binary):
 
 	return my_str
 
-#print(BIN_to_OCT(1000))
-
-
 def DEC_to_BIN(decimal):
 	rem = 0
 	binary = []
@@ -111,6 +114,10 @@ def DEC_to_BIN(decimal):
 	return my_str
 
 
+print(BIN_to_DEC('101001'))
+print(BIN_to_DEC_2('101001')) 
+#print(BIN_to_HEX(10011))
+#print(BIN_to_OCT(1000))
 #print(DEC_to_BIN(1000))
 
 
