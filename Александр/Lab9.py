@@ -19,6 +19,11 @@ def dec_to_oct(dec):
 
     return string
 
+
+
+
+
+
 dec_number = int(input())
 
 print(dec_to_oct(dec_number))
