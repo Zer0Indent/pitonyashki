@@ -1,8 +1,26 @@
+
+#def BASE_to_DEC(value, base):
+#def DEC_to_BASE(value, base):
+#def conv(from_base, to_base):
+
+
+def BIN_to_DEC(binary):
+	
+	result = 0
+	length = len(binary)
+	
+	for i in range(length):
+		result += int(binary[length - 1 - i]) * 2 ** i
+	
+	return result
+
 def from2to16(number):
     number = str(number)
     length = len(number)
-    number = '0' * (length // 4 * 4 + (0 if length % 4 == 0 else 1) * 4 - length) + number
-    
+
+    number = '0' * (length // 4 * 4 + (0 if length % 4 == 0 else 1) * 4 - length)
+    number += number
+
     result = ''
     end = len(number) // 4
     for i in range(end):
@@ -20,6 +38,4 @@ def hexSymbol(fragment):
     return symbols[index]
 
 
-
-#assert from2to16(10101101001) == 
-print(from2to16(10101101001))
+print(from2to16(1010010001011))
