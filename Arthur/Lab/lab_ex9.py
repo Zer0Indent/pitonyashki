@@ -109,13 +109,13 @@ def DEC_to_Hex(decimal):
 	hexadecimal = []
 	div = decimal
 
-	while div // 16 != 0:
+	while div != 0:
 		rem = div % 16
 		
 		hexadecimal.append('ABCDEF'[rem - 10] if rem >= 10 else str(rem)) 
 		div //= 16
 
-	hexadecimal.append('ABCDEF'[(div % 16) - 10] if div % 16 >= 10 else str(div % 16)) 
+	#hexadecimal.append('ABCDEF'[(div % 16) - 10] if div % 16 >= 10 else str(div % 16)) 
 	hexadecimal.reverse()
 
 	my_str = ''
@@ -157,3 +157,5 @@ def DEC_to_OCT(dec):
 #print(BIN_to_HEX(1010010001011))
 #print(BIN_to_OCT(1000))
 #print(DEC_to_BIN(1000))
+
+print(DEC_to_Hex(555))

@@ -1,7 +1,12 @@
 
 #def BASE_to_DEC(value, base):
 #def DEC_to_BASE(value, base):
-#def conv(from_base, to_base):
+#def conv(value, from_base, to_base):
+
+# 10 >> 10 - само число
+# 2 >> 10, 8 >> 10, 16 >> 10 - BASE_to_DEC
+# 10 >> 2, ... - DEC_to_BASE
+# 16 >> 2 - BASE_to_DEC, DEC_to_BASE
 
 
 def BIN_to_DEC(binary):
